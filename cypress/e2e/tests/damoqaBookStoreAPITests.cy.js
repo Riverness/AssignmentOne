@@ -1,5 +1,5 @@
-import BooksClient from "../APIHelpers/BooksClient";
-import AccountClient from "../APIHelpers/AccountClient";
+import BooksClient from "../../support/APIHelpers/BooksClient";
+import AccountClient from "../../support/APIHelpers/AccountClient";
 
 const USER = {
     userName: "Test_User", password: "Pa$$W0rd123"
