@@ -4,6 +4,7 @@ CompanyOne Quality Engineer job interview assignment
 ## Some significant decisions I made
 
 #### UI Tests
+- Every function that performs actions should check if its actions had the desired effect. I tried to ensure this by asserting the state of the DOM structure after every step (as long as it was possible/feasible to do so). This ensures the tests to be more stable and if (or when, depends on our optimism levels) tests fail, they will fail at the actual step things went wrong. It also helps us to chain commands together with greater confidence.
 - I used only two pages in the page object model in this implementation since all of the website was functioning within only these two pages from what I could see. The URLs kept changing but the page layout was essentially the same so one homepage and one playground page was implemented as page objects.
 - I couldn't implement the drag-and-drop test case. It was not something I came across in my career and I couldn't figure out how to do it so in the interest of time I left it unimplemented.
 
